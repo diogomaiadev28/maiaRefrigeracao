@@ -1,0 +1,22 @@
+{
+    "name": "diogomaiadev28/maia-refrigeracao",
+    "type": "project",
+    "autoload": {
+        "classmap": [
+            "Controller/"
+        ],
+        "psr-4": {
+            "Diogomaiadev28\\MaiaRefrigeracao\\": "maiaRefrigeracao/",
+            "Controller\\": "Controller/",
+            "Model\\": "Model/"
+        },
+        "files": [
+            "Config/configuration.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.0",
+        "ext-mbstring": "*"
+    }
+}

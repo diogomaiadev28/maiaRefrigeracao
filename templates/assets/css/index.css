@@ -1,0 +1,539 @@
+@import 'global.css';
+
+.swiper {
+  width: 100%;
+  height: 70rem; /* Ou a altura que você preferir */
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Para a foto não achatar */
+}
+
+a {
+  text-decoration: none;
+}
+
+/* UPPER HEADER */
+
+header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+
+.upperHeader {
+  background-color: var(--lightBlue);
+  padding: 0.6rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.queue {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.queuePage {
+  padding: 1rem;
+  border-style: none;
+  border-radius: 100rem;
+  background-color: var(--darkBlue);
+  cursor: pointer;
+}
+
+.queuePage a {
+  color: var(--white);
+}
+
+.contact {
+  display: flex;
+  gap: 4rem;
+  height: fit-content;
+}
+
+.unit {
+  height: fit-content;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.unit img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.unit p {
+  font-size: 1.6rem;
+  color: var(--white);
+}
+
+.instagram img {
+  width: 1.5rem;
+}
+
+.instagram {
+  padding: 1rem;
+  border-style: none;
+  border-radius: 100rem;
+  background-color: var(--darkBlue);
+  cursor: pointer;
+}
+
+/* LOWER HEADER */
+
+.lowerHeader {
+  background-color: var(--white);
+  display: flex;
+  padding: 1rem 10rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lowerHeader img {
+  width: 25rem;
+  height: fit-content;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  gap: 3rem;
+}
+
+.textLi a {
+  color: var(--wine);
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: 500ms;
+}
+
+.textLi a:hover {
+  color: var(--gray);
+  transition: 500ms;
+}
+
+.buttonLi {
+  padding: 1rem 2.5rem;
+  background-color: var(--wine);
+  border-style: none;
+  border-radius: 100rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 .5rem .5rem var(--shadow);
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.buttonLi:hover {
+  transform: scale(105%);
+  transition: 500ms;
+}
+
+.buttonLi a {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: 500ms;
+}
+
+.buttonLi a img {
+  width: 2.5rem;
+}
+
+/* MAIN */
+
+main {
+  padding-top: 12.5rem;
+  position: relative;
+}
+
+.getQuote {
+  padding: 4rem;
+  position: absolute;
+  background-color: var(--transparentBlue);
+  top: 22.5rem;
+  right: 10rem;
+  z-index: 100;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 2rem;
+}
+
+.getQuote a {
+  color: var(--white);
+}
+
+.getQuote h1 {
+  font-size: 3.4rem;
+  line-height: 3rem;
+  width: 100%;
+}
+
+.getQuote p {
+  font-size: 2rem;
+  width: 20rem;
+  font-weight: 600;
+}
+
+.quoteBtn {
+  background-color: var(--middleBlue);
+  color: var(--white);
+  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  width: fit-content;
+}
+
+.quoteBtn2 {
+  background-color: var(--wine);
+  color: var(--white);
+  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  width: fit-content;
+}
+
+/* MAIN 1 */
+
+.main1 {
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.main1 h1 {
+  font-size: 4rem;
+  color: var(--middleBlue)
+}
+
+.main1 p {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  color: var(--darkBlue);
+  text-align: justify;
+}
+
+.main2 {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.main2 img {
+  width: 36rem;
+  height: fit-content;
+}
+
+/* SERVICES */
+
+.services {
+  display: flex;
+}
+
+.red {
+  background-color: var(--wine);
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-left: 20rem;
+}
+
+.red img {
+  width: 25rem;
+}
+
+.blue {
+  background-color: var(--lightBlue);
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-top: 3rem;
+  padding-right: 30rem;
+  gap: 2rem;
+}
+
+.blue h2 {
+  color: var(--white);
+  font-size: 4rem;
+}
+
+.blue p {
+  font-size: 1.8rem;
+  color: var(--white);
+  line-height: 3rem;
+}
+
+/* SERVICES IMG */
+
+.servicesDiv, .servicesDiv2{
+  display: flex;
+  padding: 4rem 0;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.servicesDiv {
+  background-color: var(--white)
+}
+
+.servicesDiv2 {
+  background-color: var(--almostWhite);
+  flex-direction: row-reverse;
+}
+
+.servicesDiv img {
+  width: 50rem;
+  height: 37.5rem;
+  border-style: solid;
+  border-width: 0.4rem;
+  border-color: var(--lightBlue);
+  border-radius: 1.4rem;
+}
+
+.servicesDiv2 img {
+  height: 37.5rem;
+  width: 50rem;
+  border-style: solid;
+  border-width: 0.4rem;
+  border-color: var(--wine);
+  border-radius: 1.4rem;
+}
+
+.servicesDiv .content {
+  width: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.servicesDiv2 .content {
+  width: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.separator {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.servicesDiv .separator h2 {
+  font-size: 3rem;
+  color: var(--middleBlue);
+}
+
+.servicesDiv2 .separator h2 {
+  font-size: 3rem;
+  color: var(--wine);
+}
+
+.servicesDiv .separator p {
+  color: var(--darkBlue);
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+.servicesDiv2 .separator p {
+  color: var(--wine);
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+.servicesContainer {
+  padding: 0
+}
+
+/* MARCAS */
+
+.marcas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  gap: 2rem;
+}
+
+.marcas h2 {
+  font-size: 3rem;
+  color: var(--wine);
+}
+
+.marcas p {
+  font-size: 2.2rem;
+  color: var(--darkBlue);
+}
+
+.grid {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 6rem;
+
+}
+
+.grid img {
+  width: 20rem;
+  align-self: center;
+}
+
+/* QUOTE */
+
+#quote {
+  background-image: linear-gradient(var(--darkBlue), var(--lightBlue));
+  padding: 6rem 12rem;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  background-color: var(--white);
+  border-radius: 2rem;
+  padding: 4rem;
+  width: 60rem;
+  justify-self: end;
+}
+
+form h2 {
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+input{
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  padding-bottom: .5rem;
+  padding-left: .5rem;
+}
+
+textarea {
+  border-width: .2rem;
+  border-style: solid;
+  border-radius: .8rem;
+  padding: .5rem;
+  height: 10rem;
+  resize: none;
+}
+
+.input label {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+form button {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--lightBlue);
+  border-style: none;
+  border-radius: 1rem;
+}
+
+/* CONTACTS */
+
+#contacts {
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.leftLogo {
+  width: 30rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.left p {
+  font-size: 1.4rem;
+  color: var(--darkBlue);
+  width: 48rem;
+}
+
+.buttons button {
+  padding: 1rem;
+  background-color: var(--wine);
+  border-style: none;
+  border-radius: .6rem;
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  transition: 500ms;
+  transform: scale(110%);
+}
+
+.buttons button img {
+  width: 2rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.right h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--wine);
+}
+
+.right div {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.4 rem;
+  color: var(--darkBlue);
+}
+
+.right div img {
+  width: 1.5rem;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 2rem;
+  background-color: var(--wine);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  color: var(--white);
+  font-size: 1.2rem;
+}
