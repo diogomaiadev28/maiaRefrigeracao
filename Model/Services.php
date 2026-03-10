@@ -53,6 +53,44 @@ class Services {
             throw new Exception ('Não foi possível consultar serviço pelo código, erro correspondente: ' . $e);
         }
     }
+
+    public function removeServiceByCode($code) {
+        try {
+            $sql = 'DELETE FROM services WHERE code = :code';
+            $stmt = $this->db->prepare($sql);
+            $stmt->bindParam(':code', $code, PDO::PARAM_INT);
+            $stmt->execute();
+            return true;
+        } catch (PDOException $e) {
+            throw new Exception('Não foi possível deletar serviço pelo código, erro correspondente: ' . $e);
+        }
+    }
+
+    public function getAllCodes() {
+        try {
+            $sql = 'SELECT code FROM services';
+            $stmt = $this->db->prepare($sql);
+            $stmt->execute();
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        } catch (PDOException $e) {
+            throw new Exception('Não foi possível selecionar todos os códigos, erro correspondente: ' . $e);
+        }
+    }
+
+    public function updateServiceByCode ($name, $description, $status, $code) {
+        try {
+            $sql = 'UPDATE services SET name = :name, description = :description, status = :status WHERE code = :code';
+            $stmt = $this->db->prepare($sql);
+            $stmt->bindParam(':name', $name, PDO::PARAM_STR);
+            $stmt->bindParam(':description', $description, PDO::PARAM_STR);
+            $stmt->bindParam(':status', $status, PDO::PARAM_STR);
+            $stmt->bindParam(':code', $code, PDO::PARAM_STR);
+            $stmt->execute();
+            return true;
+        } catch (PDOException $e) {
+            throw new Exception('Não foi possível atualizar o serviço de código: ' . $code . ', pois ocorreu o erro correspondente: ' . $e);
+        }
+    }
 }
 
 ?>

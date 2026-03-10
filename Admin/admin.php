@@ -15,17 +15,38 @@ $serviceController = new ServicesController();
 $services = $serviceController->getAllServices();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if(isset($_POST['name']) and isset($_POST['status']) and isset($_POST['description'])){
-        $name = $_POST['name'];
-        $status = $_POST['status'];
-        $description = $_POST['description'];
-        $serviceController->createService($name, $description, $status);
+    if(isset($_POST['create'])){
+        if(empty($_POST['name']) or empty($_POST['description'])) {
+            echo '<script>alert("Preencha todos os campos!")</script>';
+        } else {
+            $name = $_POST['name'];
+            $status = $_POST['status'];
+            $description = $_POST['description'];
+            $serviceController->createService($name, $description, $status);
+            header('Location: admin.php');
+            exit;
+        }
+    }
+    if(isset($_POST['edit'])){
+        if(empty($_POST['editName']) or empty($_POST['editDescription'])) {
+            echo '<script>alert("Preencha todos os campos!")</script>';
+        } else {
+            $name = $_POST['editName'];
+            $description = $_POST['editDescription'];
+            $status = $_POST['editStatus'];
+            $code = $_POST['editingCode'];
+            $serviceController->updateServiceByCode($name, $description, $status, $code);
+            header('Location: admin.php');
+            exit;
+        }
+    }
+    if(isset($_POST['remove'])){
+        $code = $_POST['removingCode'];
+        $serviceController->removeServiceByCode($code);
         header('Location: admin.php');
         exit;
     }
-    // + ISSETs
 }
-
 ?>
 
 
@@ -39,8 +60,41 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <link rel="shortcut icon" href="../templates/assets/img/logo.ico" type="image/x-icon">
     </head>
     <body>
+        <div class="formContainer2 hidden">
+            <form class="eraseForm" method="POST">
+                <h3>Confirme exclusão</h3>
+                <div class="btns">
+                    <button class="confirm" name="remove">Excluir</button>
+                    <button class="cancel">Cancelar</button>
+                </div>
+                <input type="hidden" id="removingCode" name="removingCode">
+            </form>
+        </div>
+        <div class="formContainer hidden">
+            <form class="hiddenForm" method="POST">
+                <h2>Editar</h1>
+                <div class="editName">
+                    <label for="editName">Nome</label>
+                    <input type="text" name="editName" id="editName" placeholder="Digite o nome">
+                </div>
+                <div class="editDescription">
+                    <label for="editDescription">Descrição</label>
+                    <textarea name="editDescription" id="editDescription" placeholder="Digite a descrição"></textarea>
+                </div>
+                <div class="editStatus">
+                    <label for="editStatus">Status</label>
+                    <select name="editStatus" id="editStatus">
+                        <option value="on-queue">Na fila</option>
+                        <option value="in-progress">Em andamento</option>
+                        <option value="done">Finalizado</option>
+                    </select>                    
+                </div>
+                <input type="hidden" id="editingCode" name="editingCode">
+                <button type="submit" name="edit">Editar</button>
+            </form>
+        </div>
         <div class="container">
-            <form method="POST">
+            <form class="showingForm" method="POST">
                 <h1>Painel de Serviços</h1>
                 <div class="mainInfo">
                     <div class="name">
@@ -60,7 +114,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <label for="description">Descrição</label>
                     <textarea name="description" id="description" placeholder="Descreva o serviço"></textarea>
                 </div>
-                <button type="submit">Criar Serviço</button>
+                <button type="submit" name="create">Criar Serviço</button>
             </form>
             <div class="queue">
                 <h2>Fila de Serviços</h2>
@@ -93,4 +147,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         </div>
     </body>
+    <script src="../templates/assets/js/admin.js"></script>
 </html>

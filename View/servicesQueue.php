@@ -49,7 +49,7 @@ $services = $serviceController->getAllServices();
                     } else if ($service['status'] == 'done') {
                         echo 'Finalizado';
                     } echo '</div>
-                    <div class="info"><strong>Cliente: </strong>' . $service['name'] . '</div>
+                    <div class="info"><strong>Cliente: </strong>' . $service['code'] . '</div>
                     <div class="info"><strong>Descrição: </strong>' . $service['description'] . '</div>
                     <div class="queue">
                         <span><strong>Posição na fila: </strong>' . $realPosition . '</span>
