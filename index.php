@@ -1,3 +1,15 @@
+<?php
+
+require_once __DIR__ . '/Controller/EmailController.php';
+use Controller\EmailController;
+$emailController = new EmailController();
+
+if(isset($_POST['sendMail'])) {
+    $emailController->send();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -186,7 +198,7 @@
             </div>
         </section>
         <section id="quote">
-            <form>
+            <form method="POST">
                 <h2>Solicite seu orçamento!!</h2>
                 <div class="input">
                     <label for="name">Nome</label>
@@ -206,7 +218,7 @@
                     <label for="doubts">Como podemos te ajudar?</label>
                     <textarea name="doubts" id="doubts" placeholder="Tire suas dúvidas, solicite orçamentos ou deixe uma mensagem para entrarmos em contato."></textarea>
                 </div>
-                <button type="submit">Enviar</button>
+                <button type="submit" name="sendMail">Enviar</button>
             </form>
         </section>
         <section id="contacts">
