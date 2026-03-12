@@ -84,6 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="editStatus">
                     <label for="editStatus">Status</label>
                     <select name="editStatus" id="editStatus">
+                        <option value="waiting-confirm">Aguardando confirmação</option>
                         <option value="on-queue">Na fila</option>
                         <option value="in-progress">Em andamento</option>
                         <option value="done">Finalizado</option>
@@ -104,6 +105,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="status">
                         <label for="status">Status</label>
                         <select name="status" id="status">
+                            <option value="waiting-confirm">Aguardando confirmação</option>
                             <option value="on-queue">Na fila</option>
                             <option value="in-progress">Em andamento</option>
                             <option value="done">Finalizado</option>
@@ -129,7 +131,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <p class="description2">' . $service['description'] . '</p>
                     </div>
                     <div class="phone">
-                    <p class="status2 ' . $service['status'] . '">'; if($service['status'] == 'on-queue') {
+                    <p class="status2 ' . $service['status'] . '">'; if ($service['status'] == 'waiting-confirm') {
+                        echo 'Aguardando Confirmação';
+                    } else if($service['status'] == 'on-queue') {
                         echo 'Na Fila';
                     } else if ($service['status'] == 'in-progress') {
                         echo 'Em Andamento';

@@ -43,7 +43,9 @@ $services = $serviceController->getAllServices();
                         $realPosition = $position + 1;
                         echo '
                 <div class="card" id="'. $service['code'] .'">
-                    <div class="status ' . $service['status'] . '">Status: '; if($service['status'] == 'on-queue') {
+                    <div class="status ' . $service['status'] . '">Status: '; if ($service['status'] == 'waiting-confirm') {
+                        echo 'Aguardando Confirmação';
+                    } else if($service['status'] == 'on-queue') {
                         echo 'Na Fila';
                     } else if ($service['status'] == 'in-progress') {
                         echo 'Em Andamento';

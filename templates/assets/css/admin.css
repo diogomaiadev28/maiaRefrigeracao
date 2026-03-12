@@ -140,10 +140,12 @@ h3 {
     width: 6rem;
     text-align: center;
     background-color: var(--white);
+    height: fit-content;
 }
 
-.on-queue {background-color: var(--red);}
-.in-progress {background-color: var(--yellow);}
+.waiting-confirm {background-color: var(--red);}
+.on-queue {background-color: var(--yellow);}
+.in-progress {background-color: var(--blue);}
 .done {background-color: var(--green);}
 
 .actions {
@@ -253,6 +255,7 @@ h3 {
 .phone {
     display: flex;
     width: fit-content;
+    align-items: center;
 }
 
 @media screen and (max-width: 1024px) {

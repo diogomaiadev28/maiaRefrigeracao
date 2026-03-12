@@ -82,6 +82,7 @@ p {
     margin-bottom: 1rem;
 }
 
+.waiting-confirm { color: #e74c3c;}
 .on-queue { color: #f1c40f; }
 .in-progress { color: #3498db; }
 .done { color: #2ecc71; }
