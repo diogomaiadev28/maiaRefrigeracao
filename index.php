@@ -64,9 +64,10 @@ if(isset($_POST['sendMail'])) {
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
+            <img class="phoneLogo" src="templates/assets/img/logo2.png" alt="Maia Refrigeração logo featuring red and blue text with a stylized refrigeration symbol">
             <div class="getQuote">
-                <h1>Peça o seu<br>orçamento</h1>
-                <p>Entre em contato conosco, e solicite já seu orçamento<br>(71) 99698-4571</p>
+                <h1>Peça o seu <br> orçamento</h1>
+                <p>Entre em contato conosco, e solicite já seu orçamento <br> (71) 99698-4571</p>
                 <a class="quoteBtn2" href="index.html#quote">Solicitar Orçamento</a>
             </div>
             <div class="main1">
@@ -86,6 +87,11 @@ if(isset($_POST['sendMail'])) {
             <div class="services">
                 <div class="red">
                     <img src="templates/assets/img/manPointing.png" alt="A man pointing to the right, indicating direction, in a bright and inviting environment that suggests a welcoming atmosphere.">
+                    <div class="blue2">
+                        <h2>Serviços</h2>
+                        <p>A nossa empresa fornece instalação, manutenção e serviços técnicos na área da Refrigeração em ambientes domésticos.</p>
+                        <p>Para a prestação desses serviços, a empresa conta com parceiros técnicos treinados, que estão em constante aquisição de conhecimentos para aprimorar a credibilidade, segurança e confiabilidade do cliente.</p>
+                    </div>
                 </div>
                 <div class="blue">
                     <h2>Serviços</h2>
@@ -95,7 +101,10 @@ if(isset($_POST['sendMail'])) {
             </div>
             <div class="servicesContainer">
                 <div class="servicesDiv">
-                    <img src="templates/assets/img/camara.png" alt="Commercial refrigeration chamber with stainless steel exterior and glass doors, displaying internal shelving units in a bright, professional kitchen or storage environment, conveying reliability and food safety standards.">
+                    <div class="tablet">
+                        <img src="templates/assets/img/camara.png" alt="Commercial refrigeration chamber with stainless steel exterior and glass doors, displaying internal shelving units in a bright, professional kitchen or storage environment, conveying reliability and food safety standards.">
+                        <h2>Assistência em Câmera Frias, Balcão Frigorifico, Ilha de Congelados</h2>
+                    </div>
                     <div class="content">
                         <div class="separator">
                             <h2>Assistência em Câmera Frias, Balcão Frigorifico, Ilha de Congelados</h2>
@@ -105,7 +114,10 @@ if(isset($_POST['sendMail'])) {
                     </div>
                 </div>
                 <div class="servicesDiv2">
-                    <img src="templates/assets/img/geladeira.png" alt="Technician performing maintenance on a refrigerator unit in a bright, professional service environment, demonstrating hands-on repair and diagnostic work with tools and equipment.">
+                    <div class="tablet2">
+                        <img src="templates/assets/img/geladeira.png" alt="Technician performing maintenance on a refrigerator unit in a bright, professional service environment, demonstrating hands-on repair and diagnostic work with tools and equipment.">
+                        <h2>Manutenção de Geladeiras e Frigobar</h2>
+                    </div>
                     <div class="content">
                         <div class="separator">
                             <h2>Manutenção de Geladeiras e Frigobar</h2>
@@ -115,7 +127,10 @@ if(isset($_POST['sendMail'])) {
                     </div>
                 </div>
                 <div class="servicesDiv">
-                    <img src="templates/assets/img/freezer.png" alt="Commercial freezer unit with stainless steel exterior and transparent glass doors, displaying multiple frozen food items on internal shelving in a bright professional kitchen or storage environment, conveying food preservation and commercial refrigeration reliability.">
+                    <div class="tablet">
+                        <img src="templates/assets/img/freezer.png" alt="Commercial freezer unit with stainless steel exterior and transparent glass doors, displaying multiple frozen food items on internal shelving in a bright professional kitchen or storage environment, conveying food preservation and commercial refrigeration reliability.">
+                        <h2>Manutenção em Freezers e Expositores</h2>
+                    </div>
                     <div class="content">
                         <div class="separator">
                             <h2>Manutenção em Freezers e Expositores</h2>
@@ -125,7 +140,10 @@ if(isset($_POST['sendMail'])) {
                     </div>
                 </div>
                 <div class="servicesDiv2">
-                    <img src="templates/assets/img/bebedouro.png" alt="Commercial freezer unit with stainless steel exterior and transparent glass doors, displaying multiple frozen food items on internal shelving in a bright professional kitchen or storage environment, conveying food preservation and commercial refrigeration reliability.">
+                    <div class="tablet2">
+                        <img src="templates/assets/img/bebedouro.png" alt="Commercial freezer unit with stainless steel exterior and transparent glass doors, displaying multiple frozen food items on internal shelving in a bright professional kitchen or storage environment, conveying food preservation and commercial refrigeration reliability.">
+                        <h2>Manutenção em Bebedouros e Purificadores</h2>
+                    </div>
                     <div class="content">
                         <div class="separator">
                             <h2>Manutenção em Bebedouros e Purificadores</h2>
@@ -135,7 +153,10 @@ if(isset($_POST['sendMail'])) {
                     </div>
                 </div>
                 <div class="servicesDiv">
-                    <img src="templates/assets/img/ar.png" alt="Commercial freezer unit with stainless steel exterior and transparent glass doors, displaying multiple frozen food items on internal shelving in a bright professional kitchen or storage environment, conveying food preservation and commercial refrigeration reliability.">
+                    <div class="tablet">
+                        <img src="templates/assets/img/ar.png" alt="Commercial freezer unit with stainless steel exterior and transparent glass doors, displaying multiple frozen food items on internal shelving in a bright professional kitchen or storage environment, conveying food preservation and commercial refrigeration reliability.">
+                        <h2>Instalação de Ares-Condicionados</h2>
+                    </div>
                     <div class="content">
                         <div class="separator">
                             <h2>Instalação de Ares-Condicionados</h2>
@@ -145,7 +166,10 @@ if(isset($_POST['sendMail'])) {
                     </div>
                 </div>
                 <div class="servicesDiv2">
-                    <img src="templates/assets/img/limpeza.png" alt="Commercial freezer unit with stainless steel exterior and transparent glass doors, displaying multiple frozen food items on internal shelving in a bright professional kitchen or storage environment, conveying food preservation and commercial refrigeration reliability.">
+                    <div class="tablet2">
+                        <img src="templates/assets/img/limpeza.png" alt="Commercial freezer unit with stainless steel exterior and transparent glass doors, displaying multiple frozen food items on internal shelving in a bright professional kitchen or storage environment, conveying food preservation and commercial refrigeration reliability.">
+                        <h2>Limpeza e Higienização</h2>
+                    </div>
                     <div class="content">
                         <div class="separator">
                             <h2>Limpeza e Higienização</h2>
@@ -155,7 +179,10 @@ if(isset($_POST['sendMail'])) {
                     </div>
                 </div>
                 <div class="servicesDiv">
-                    <img src="templates/assets/img/manutencao.png" alt="Commercial freezer unit with stainless steel exterior and transparent glass doors, displaying multiple frozen food items on internal shelving in a bright professional kitchen or storage environment, conveying food preservation and commercial refrigeration reliability.">
+                    <div class="tablet">
+                        <img src="templates/assets/img/manutencao.png" alt="Commercial freezer unit with stainless steel exterior and transparent glass doors, displaying multiple frozen food items on internal shelving in a bright professional kitchen or storage environment, conveying food preservation and commercial refrigeration reliability.">
+                        <h2>Manutenção e assistência de Ares-Condicionados</h2>
+                    </div>
                     <div class="content">
                         <div class="separator">
                             <h2>Manutenção e assistência de Ares-Condicionados</h2>
@@ -165,7 +192,10 @@ if(isset($_POST['sendMail'])) {
                     </div>
                 </div>
                 <div class="servicesDiv2">
-                    <img src="templates/assets/img/maquina.png" alt="Commercial freezer unit with stainless steel exterior and transparent glass doors, displaying multiple frozen food items on internal shelving in a bright professional kitchen or storage environment, conveying food preservation and commercial refrigeration reliability.">
+                    <div class="tablet2">
+                        <img src="templates/assets/img/maquina.png" alt="Commercial freezer unit with stainless steel exterior and transparent glass doors, displaying multiple frozen food items on internal shelving in a bright professional kitchen or storage environment, conveying food preservation and commercial refrigeration reliability.">
+                        <h2>Maquinas produtoras de Sorvetes e Açaí</h2>
+                    </div>
                     <div class="content">
                         <div class="separator">
                             <h2>Maquinas produtoras de Sorvetes e Açaí</h2>

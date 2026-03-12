@@ -16,8 +16,11 @@ class EmailController {
         $headers .= "Reply-To: $email\r\n";
 
         $content = "Nome: $name\nTelefone: $phone\nEmail: $email\nMensagem: $message";
-        mail($para, $subject, $content, $headers);
-        echo '<script>alert("Email enviado com sucesso.")</script>';
+        if (mail($para, $subject, $content, $headers)){
+            echo '<script>alert("Email enviado com sucesso.")</script>';
+        } else {
+            echo '<script>alert("Falha ao enviar o e-mail.")</script>';
+        }
     }
 }
 

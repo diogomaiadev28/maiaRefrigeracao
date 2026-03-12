@@ -20,7 +20,8 @@ $services = $serviceController->getAllServices();
         <link rel="shortcut icon" href="../templates/assets/img/logo.ico" type="image/x-icon">
     </head>
     <body>
-        <a class="backA" href="../index.html"><button class="back">Voltar</button></a>
+        <div class="circle"></div>
+        <a class="backA" href="../index.php"><button class="back">Voltar</button></a>
         <figure class="logo">
             <img src="../templates/assets/img/logo.png" alt="Maia Refrigeração logo featuring blue and red letters MR with a snowflake symbol and curved accent, company name in Portuguese below">
         </figure>

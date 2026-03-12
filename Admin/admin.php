@@ -128,6 +128,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <h3 class="name2">' . $service['name'] . '</h3>
                         <p class="description2">' . $service['description'] . '</p>
                     </div>
+                    <div class="phone">
                     <p class="status2 ' . $service['status'] . '">'; if($service['status'] == 'on-queue') {
                         echo 'Na Fila';
                     } else if ($service['status'] == 'in-progress') {
@@ -136,6 +137,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         echo 'Finalizado';
                     } echo '</p>
                     <p class="code">' . $service['code'] . '</p>
+                    </div>
                     <div class="actions">
                         <button class="edit">Editar</button>
                         <button class="remove">Remover</button>

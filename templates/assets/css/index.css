@@ -159,6 +159,10 @@ main {
   position: relative;
 }
 
+.phoneLogo {
+  display: none;
+}
+
 .getQuote {
   padding: 4rem;
   position: absolute;
@@ -258,6 +262,10 @@ main {
 
 .red img {
   width: 25rem;
+}
+
+.blue2 {
+  display: none;
 }
 
 .blue {
@@ -361,6 +369,18 @@ main {
   text-align: justify;
 }
 
+.tablet h2 {
+  display: none;
+  font-size: 3rem;
+  color: var(--middleBlue);
+}
+
+.tablet2 h2 {
+  display: none;
+  font-size: 3rem;
+  color: var(--wine);
+}
+
 .servicesContainer {
   padding: 0
 }
@@ -455,6 +475,7 @@ form button {
   background-color: var(--lightBlue);
   border-style: none;
   border-radius: 1rem;
+  cursor: pointer;
 }
 
 /* CONTACTS */
@@ -536,4 +557,239 @@ footer {
 footer p {
   color: var(--white);
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1180px) {
+  header {
+    width: 100vw;
+  }
+  .servicesDiv .content, .servicesDiv2 .content {
+    align-items: center;
+    gap: 1rem;
+  }
+  .content a {
+    width: 100%;
+    text-align: center;
+  }
+  .servicesDiv img, .servicesDiv2 img {
+    width: 30rem;
+    height: 20rem;
+  }
+
+  .servicesDiv, .servicesDiv2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .separator h2{
+    display: none;
+  }
+  .tablet, .tablet2 {
+    display: flex;
+    gap: 2rem;
+    width: fit-content;
+  }
+  .tablet2 {
+    flex-direction: row-reverse;
+  }
+  .tablet2 h2 {
+    text-align: end;
+  }
+
+  .tablet h2, .tablet2 h2 {
+    display: block;
+    width: 30rem;
+  }
+
+  .blue {
+    padding-right: 1rem; 
+  }
+  .main2 img, .lowerHeader img {
+    display: none;
+  }
+  .upperHeader {
+    padding: 1rem 2rem;
+  }
+  .lowerHeader {
+    padding: 1rem 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  #inicio {
+    padding-top: 10.7rem;
+  }
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .grid img {
+    width: 15rem;
+  }
+  .marcas h2, .marcas p {
+    text-align: justify;
+  }
+  .unit p {
+    font-size: 1rem;
+  }
+  .queuePage a {
+    font-size: 1rem;
+  }
+  .contact {
+    flex-direction: column;
+  }
+  .contact, .queue {
+    gap: 1rem;
+  }
+  #contacts {
+    flex-direction: column;
+  }
+  .red {
+    width: 25rem;
+    padding: 0;
+  }
+  .buttonLi a img {
+    display: flex;
+    width: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  #inicio {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15rem;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .instagram {
+    display: none;
+  }
+  .queuePage a {
+    font-size: 0.8rem;
+  }
+  .queuePage {
+    padding: 0.6rem 0.6rem 0.9rem 0.6rem;
+  }
+  .textLi a, .buttonLi a {
+    font-size: 0.8rem;
+  }
+  ul {
+    gap: 1rem;
+  }
+  .buttonLi a img {
+    width: 1rem;
+  }
+  .buttonLi {
+    padding: 1rem;
+  }
+  .swiper {
+    display: none;
+  }
+  .getQuote {
+    position: inherit;
+    width: 100%;
+    top: 0;
+    right: 0;
+  }
+  .main1 h1 {
+    font-size: 2rem;
+  }
+  .main1 p {
+    font-size: 1.4rem;
+  }
+  .main1 {
+    padding: 4rem 0;
+  }
+  .getQuote h1, .getQuote p{
+    width: 100%;
+    text-align: justify;
+  }
+  .getQuote br {
+    display: none;
+  }
+  .getQuote h1 {
+    font-size: 2rem;
+  }
+  .getQuote p {
+    font-size: 1.6rem;
+  }
+  .blue {
+    display: none;
+  }
+  .blue2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    gap: 2rem;
+    height: 100%;
+    padding: 1rem;
+  }
+  .blue2 h2 {
+    color: var(--white);
+    font-size: 2rem;
+  }
+
+  .blue2 p {
+    font-size: 1rem;
+    color: var(--white);
+    line-height: 1.5rem;
+    text-align: justify;
+  }
+  .red {
+    width: 100%;
+  }
+  .red img {
+    width: 15rem;
+  }
+  .tablet, .tablet2 {
+    flex-direction: column;
+  }
+  .tablet h2, .tablet2 h2 {
+    font-size: 2rem;
+    text-align: start;
+  }
+  .servicesDiv .separator p, .servicesDiv2 .separator p {
+    font-size: 1rem;
+  }
+  .servicesDiv .content, .servicesDiv2 .content {
+    width: 33rem;
+  }
+  .marcas h2 {
+    font-size: 2rem;
+  }
+  .marcas p {
+    font-size: 1.2rem;
+  }
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid img {
+    width: 10rem;
+  }
+  form h2 {
+    font-size: 2rem;
+  }
+  .input label {
+    font-size: 1.2rem;
+  }
+  #quote {
+    padding: 1rem;
+  }
+  .leftLogo {
+    width: 20rem;
+  }
+  .left p {
+    width: 100%;
+  }
+  .buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  .right {
+    gap: 1rem;
+  }
+  .phoneLogo {
+    display: block;
+    width: 30rem;
+    margin-bottom: 1rem;
+  }
 }

@@ -11,10 +11,13 @@ body {
     width: 22.5rem;
 }
 
-.back {
+a {
     position: absolute;
     top: 4rem;
     right: 4rem;
+}
+
+.back {
     background-color: var(--wine);
     border-style: none;
     border-radius: 1rem;
@@ -134,4 +137,35 @@ form button:hover {
 .no_service {
     color: var(--white);
     text-align: center;
+}
+
+@media screen and (max-width: 570px) {
+    .logo {
+        position: absolute;
+        top: 0;
+        left: 0; 
+    }
+    .logo img {
+        width: 15rem;
+    }
+
+    body {
+        padding-top: 25rem;
+    }
+    .circle {
+        width: 20rem;
+        height: 20rem;
+        background-color: var(--white);
+        border-radius: 0 0 1000rem 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(-50% -50%);
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    .container p {
+        width: 35rem;        
+    }
 }
