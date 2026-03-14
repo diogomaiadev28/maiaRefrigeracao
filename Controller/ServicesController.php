@@ -50,6 +50,14 @@ class ServicesController {
     public function updateServiceByCode ($name, $description, $status, $code) {
         return $this->servicesModel->updateServiceByCode($name, $description, $status, $code);
     }
+
+    public function swapUp ($code) {
+        return $this->servicesModel->swapUp($code);
+    }
+
+    public function swapDown ($code) {
+        return $this->servicesModel->swapDown($code);
+    }
 }
 
 ?>

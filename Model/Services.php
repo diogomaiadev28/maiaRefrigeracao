@@ -91,6 +91,70 @@ class Services {
             throw new Exception('Não foi possível atualizar o serviço de código: ' . $code . ', pois ocorreu o erro correspondente: ' . $e);
         }
     }
+    
+    public function swapUp ($code) {
+        try {
+            $sql = 'SELECT created_at FROM services WHERE code = :code';
+            $stmt = $this->db->prepare($sql);
+            $stmt->bindParam(':code', $code, PDO::PARAM_STR);
+            $stmt->execute();
+            $created_at = $stmt->fetch(PDO::FETCH_COLUMN);
+            
+            $sql = 'SELECT code, created_at FROM services WHERE created_at < :created_at ORDER BY created_at DESC LIMIT 1';
+            $stmt = $this->db->prepare($sql);
+            $stmt->bindParam(':created_at', $created_at, PDO::PARAM_STR);
+            $stmt->execute();
+            $created_at2 = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    
+            $sql = 'UPDATE services SET created_at = :created_at2 WHERE created_at = :created_at';
+            $stmt = $this->db->prepare($sql);
+            $stmt->bindParam(':created_at2', $created_at2[0]['created_at'], PDO::PARAM_STR);
+            $stmt->bindParam(':created_at', $created_at, PDO::PARAM_STR);
+            $stmt->execute();
+    
+            $sql = 'UPDATE services SET created_at = :created_at WHERE code = :code';
+            $stmt = $this->db->prepare($sql);
+            $stmt->bindParam(':created_at', $created_at, PDO::PARAM_STR);
+            $stmt->bindParam(':code', $created_at2[0]['code']);
+            $stmt->execute();
+            
+            return true;
+        } catch (PDOException $e) {
+            throw new Exception('Não foi possível subir serviço de posição, erro correspondente: ' . $e);
+        }
+    }
+
+    public function swapDown ($code) {
+        try {
+            $sql = 'SELECT created_at FROM services WHERE code = :code';
+            $stmt = $this->db->prepare($sql);
+            $stmt->bindParam(':code', $code, PDO::PARAM_STR);
+            $stmt->execute();
+            $created_at = $stmt->fetch(PDO::FETCH_COLUMN);
+            
+            $sql = 'SELECT code, created_at FROM services WHERE created_at > :created_at ORDER BY created_at ASC LIMIT 1';
+            $stmt = $this->db->prepare($sql);
+            $stmt->bindParam(':created_at', $created_at, PDO::PARAM_STR);
+            $stmt->execute();
+            $created_at2 = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    
+            $sql = 'UPDATE services SET created_at = :created_at2 WHERE created_at = :created_at';
+            $stmt = $this->db->prepare($sql);
+            $stmt->bindParam(':created_at2', $created_at2[0]['created_at'], PDO::PARAM_STR);
+            $stmt->bindParam(':created_at', $created_at, PDO::PARAM_STR);
+            $stmt->execute();
+    
+            $sql = 'UPDATE services SET created_at = :created_at WHERE code = :code';
+            $stmt = $this->db->prepare($sql);
+            $stmt->bindParam(':created_at', $created_at, PDO::PARAM_STR);
+            $stmt->bindParam(':code', $created_at2[0]['code']);
+            $stmt->execute();
+            
+            return true;
+        } catch (PDOException $e) {
+            throw new Exception('Não foi possível subir serviço de posição, erro correspondente: ' . $e);
+        }
+    }
 }
 
 ?>

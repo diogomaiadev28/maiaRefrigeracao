@@ -46,6 +46,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header('Location: admin.php');
         exit;
     }
+    if(isset($_POST['swapUpCode'])) {
+        $code = $_POST['swapUpCode'];
+        $serviceController->swapUp($code);
+        header('Location: admin.php');
+        exit;
+    }
+
+    if(isset($_POST['swapDownCode'])) {
+        $code = $_POST['swapDownCode'];
+        $serviceController->swapDown($code);
+        header('Location: admin.php');
+        exit;
+    }
 }
 ?>
 
@@ -92,6 +105,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
                 <input type="hidden" id="editingCode" name="editingCode">
                 <button type="submit" name="edit">Editar</button>
+            </form>
+            <form method="POST" class="hiddenCodeForm">
+                <input type="hidden" id="swapUpCode" name="swapUpCode">
+            </form>
+            <form method="POST" class="hiddenCodeForm">
+                <input type="hidden" id="swapDownCode" name="swapDownCode">
             </form>
         </div>
         <div class="container">
@@ -145,6 +164,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="actions">
                         <button class="edit">Editar</button>
                         <button class="remove">Remover</button>
+                    </div>
+                    <div class="actions">
+                        <button class="swapUp" name="swapUp">⬆</button>
+                        <button class="swapDown" name="swapDown">⬇</button>
                     </div>
                 </div>';
                     }

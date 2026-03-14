@@ -8,6 +8,10 @@ const statusInput = document.querySelector('#editStatus')
 const form = container.querySelector('form')
 const hiddenInput = document.querySelector('#removingCode')
 const hiddenInput2 = document.querySelector('#editingCode')
+const swapUpBtns = document.querySelectorAll('.swapUp')
+const swapDownBtns = document.querySelectorAll('.swapDown')
+const hiddenCode = document.querySelector('#swapUpCode')
+const hiddenCode2 = document.querySelector('#swapDownCode')
 
 editButtons.forEach(edit => {
     edit.addEventListener('click', (e) => {
@@ -41,4 +45,20 @@ container.addEventListener('click', () => {
 
 removeContainer.addEventListener('click', () => {
     removeContainer.classList.add('hidden')
+})
+
+swapUpBtns.forEach((button)=>{
+    button.addEventListener('click', ()=>{
+        let code = button.parentElement.parentElement.querySelector('.code').innerHTML
+        hiddenCode.value = code
+        hiddenCode.parentElement.submit()
+    })
+})
+
+swapDownBtns.forEach((button)=>{
+    button.addEventListener('click', ()=>{
+        let code = button.parentElement.parentElement.querySelector('.code').innerHTML
+        hiddenCode2.value = code
+        hiddenCode2.parentElement.submit()
+    })
 })

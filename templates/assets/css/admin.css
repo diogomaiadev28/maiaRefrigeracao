@@ -258,6 +258,10 @@ h3 {
     align-items: center;
 }
 
+.hiddenCodeForm {
+    display: none;
+}
+
 @media screen and (max-width: 1024px) {
     .actions {
         flex-direction: column;
