@@ -42,10 +42,10 @@ if(isset($_POST['sendMail'])) {
                 <img src="templates/assets/img/logo2.png" alt="Maia Refrigeração logo featuring red and blue text with a stylized refrigeration symbol">
                 <nav>
                     <ul>
-                        <li class="textLi"><a href="index.html#inicio">INÍCIO</a></li>
-                        <li class="textLi"><a href="index.html#services">SERVIÇOS</a></li>
-                        <li class="textLi"><a href="index.html#quote">ORÇAMENTO</a></li>
-                        <li class="textLi"><a href="index.html#contacts">CONTATOS</a></li>
+                        <li class="textLi"><a href="index.php#inicio">INÍCIO</a></li>
+                        <li class="textLi"><a href="index.php#services">SERVIÇOS</a></li>
+                        <li class="textLi"><a href="index.php#quote">ORÇAMENTO</a></li>
+                        <li class="textLi"><a href="index.php#contacts">CONTATOS</a></li>
                         <li class="buttonLi"><a href="https://wa.me/5571996984571?text=Ol%C3%A1!%20Estava%20navegando%20no%20seu%20site%2C%20pode%20me%20ajudar%3F" target="_blank"><img src="templates/assets/img/whatsapp.png" alt="WhatsApp icon linking to chat with Maia Refrigeração technician">Falar Com Técnico</a></li>
                     </ul>
                 </nav>
@@ -68,7 +68,7 @@ if(isset($_POST['sendMail'])) {
             <div class="getQuote">
                 <h1>Peça o seu <br> orçamento</h1>
                 <p>Entre em contato conosco, e solicite já seu orçamento <br> (71) 99698-4571</p>
-                <a class="quoteBtn2" href="index.html#quote">Solicitar Orçamento</a>
+                <a class="quoteBtn2" href="index.php#quote">Solicitar Orçamento</a>
             </div>
             <div class="main1">
                 <h1>A Maia Refrigeração é referência no mercado de Refrigeradores e Climatizadores</h1>
@@ -110,7 +110,7 @@ if(isset($_POST['sendMail'])) {
                             <h2>Assistência em Câmera Frias, Balcão Frigorifico, Ilha de Congelados</h2>
                             <p>Realizamos reparos e limpeza especializada em Câmaras Frias, Balcões Frigoríficos e em Ilha de congelados de todos os seguimentos comerciais como Açougues, Supermercados, padarias, distribuidoras, residenciais, pequenos comércios, etc. Para as manutenções e reparos dos Balcões Frigoríficos, também utilizando peças e ferramentas de última geração. Nossos profissionais atuam com ferramentas e maquinários próprias para a realização dos devidos serviços. Para prestação dos nossos serviços com qualidade e segurança, disponibilizamos de uma equipe de técnicos formados e qualificados, totalmente preparados para atender com eficácia e confiança cada cliente. Nossos processos, para contratação de nossos serviços, são os mais rápidos e eficientes do mercado, com agendamento de visita técnica e orçamentária sem custo.</p>
                         </div>
-                        <a class="quoteBtn" href="index.html#quote">Solicitar Orçamento</a>
+                        <a class="quoteBtn" href="index.php#quote">Solicitar Orçamento</a>
                     </div>
                 </div>
                 <div class="servicesDiv2">
@@ -123,7 +123,7 @@ if(isset($_POST['sendMail'])) {
                             <h2>Manutenção de Geladeiras e Frigobar</h2>
                             <p>Nós da Mais Refrigeração, aplicamos peças originais para geladeiras e em frigobar em todos as instalações, consertos, reparos, reformas e manutenções em seu aparelho de todas as marcas e modelos, com garantia de fábrica de todas as peças, garantia de 3 meses em toda a mão-de-obra e leva até sua geladeira as melhores soluções.<br>Se você tem geladeira Lg, geladeira Samsung, geladeira side by side, geladeira Brastemp, geladeira Electrolux, geladeira Bosch, geladeira Consul, geladeira Continental, geladeira importada, geladeira Ge, geladeira Frigidaire, geladeira Sub Zero, geladeira U-line, você pode resolver todos os seus problemas numa única Assistência Técnica.</p>
                         </div>
-                        <a class="quoteBtn2" href="index.html#quote">Solicitar Orçamento</a>
+                        <a class="quoteBtn2" href="index.php#quote">Solicitar Orçamento</a>
                     </div>
                 </div>
                 <div class="servicesDiv">
@@ -136,7 +136,7 @@ if(isset($_POST['sendMail'])) {
                             <h2>Manutenção em Freezers e Expositores</h2>
                             <p>Assim como os serviços de manutenção, limpeza e reparo de Geladeiras, também realizamos reparos e limpeza especializada em Freezers e em Balcões Frigoríficos de todos os seguimentos comerciais como Açougues, Supermercados, padarias, distribuidoras, residenciais, pequenos comércios, etc. Para as manutenções e reparos dos Balcões Frigoríficos, também utilizando peças e ferramentas de última geração.<br>Nossos profissionais atuam com ferramentas e maquinários próprias para a realização dos devidos serviços. Para prestação dos nossos serviços com qualidade e segurança, disponibilizamos de uma equipe de técnicos formados e qualificados, totalmente preparados para atender com eficácia e confiança cada cliente. Nossos processos, para contratação de nossos serviços, são os mais rápidos e eficientes do mercado,com agendamento de visita técnica e orçamentária sem custo.</p>
                         </div>
-                        <a class="quoteBtn" href="index.html#quote">Solicitar Orçamento</a>
+                        <a class="quoteBtn" href="index.php#quote">Solicitar Orçamento</a>
                     </div>
                 </div>
                 <div class="servicesDiv2">
@@ -149,7 +149,7 @@ if(isset($_POST['sendMail'])) {
                             <h2>Manutenção em Bebedouros e Purificadores</h2>
                             <p>Nós realizamos conserto em bebedouros . Buscamos oferecer um diferencial no mercado, com serviços de alta qualidade e mão especializa atendendo as expectativas dos nossos clientes. Com experiência no mercado a Maia Refrigeração tem a experiência e o conhecimento para oferecer um atendimento de qualidade priorizando totalmente a satisfação dos seus clientes e colaboradores com intuito de prestarmos os melhores serviços de higienização e manutenção em bebedouros de água e purificadores de água do mercado.</p>
                         </div>
-                        <a class="quoteBtn2" href="index.html#quote">Solicitar Orçamento</a>
+                        <a class="quoteBtn2" href="index.php#quote">Solicitar Orçamento</a>
                     </div>
                 </div>
                 <div class="servicesDiv">
@@ -162,7 +162,7 @@ if(isset($_POST['sendMail'])) {
                             <h2>Instalação de Ares-Condicionados</h2>
                             <p>Os serviços de instalação de ar condicionado  são utilizados para diversos modelos e marcas importantes do mercado. Além de oferecer segurança integral e resultados de alta qualidade, na Maia Refrigeração você também encontrará serviços ágeis adequados para sua casa ou empresa. A instalação do ar condicionado é do tipo split convencional, split de cabeça para baixo, tipo caixa, teto de piso, ACJ, etc. Muitos clientes não sabem por onde começar ao decidir comprar um produto Por isso, temos profissionais bem treinados e experientes para escolher os melhores equipamentos para o seu ambiente, tendo sempre o conforto e a economia como parâmetros. Para verificar a viabilidade de uma instalação segura, inicialmente realizamos uma visita de orçamento para avaliar a localização e / ou realizar cálculos de carga de calor.</p>
                         </div>
-                        <a class="quoteBtn" href="index.html#quote">Solicitar Orçamento</a>
+                        <a class="quoteBtn" href="index.php#quote">Solicitar Orçamento</a>
                     </div>
                 </div>
                 <div class="servicesDiv2">
@@ -175,7 +175,7 @@ if(isset($_POST['sendMail'])) {
                             <h2>Limpeza e Higienização</h2>
                             <p>Fazemos limpeza e manutenção preventiva de projetos de ar condicionado trimestral ou mensalmente. Limpamos completamente todos os modelos de ar condicionado. O aparelho de ar condicionado deve ser limpo regularmente para evitar os ácaros que podem causar doenças respiratórias. O fabricante exige que os equipamentos de ar condicionado passem por manutenções preventivas de última geração, caso contrário o equipamento perderá a garantia.</p>
                         </div>
-                        <a class="quoteBtn2" href="index.html#quote">Solicitar Orçamento</a>
+                        <a class="quoteBtn2" href="index.php#quote">Solicitar Orçamento</a>
                     </div>
                 </div>
                 <div class="servicesDiv">
@@ -188,7 +188,7 @@ if(isset($_POST['sendMail'])) {
                             <h2>Manutenção e assistência de Ares-Condicionados</h2>
                             <p>O serviço de manutenção do ar condicionado é uma tarefa muito importante, pois não só evita perdas, mas também garante a eficiência e desempenho do equipamento. Existem dois tipos de manutenção: preventiva e corretiva. Serviço de manutenção preventiva de climatização: visa a fiscalização, análise e fiscalização de todo o equipamento e seu sistema operacional. Todo o processo tem a função de prevenir e detectar qualquer tipo de defeitos, falhas ou falhas que façam com que o equipamento não funcione normalmente. Serviço de reparação corretiva de ar condicionado visa resolver qualquer tipo de problema (incluindo defeitos, colisões ou avarias) e reparar equipamentos.</p>
                         </div>
-                        <a class="quoteBtn" href="index.html#quote">Solicitar Orçamento</a>
+                        <a class="quoteBtn" href="index.php#quote">Solicitar Orçamento</a>
                     </div>
                 </div>
                 <div class="servicesDiv2">
@@ -201,7 +201,7 @@ if(isset($_POST['sendMail'])) {
                             <h2>Maquinas produtoras de Sorvetes e Açaí</h2>
                             <p>Caso sua sorveteira falhe, entre em contato com o suporte técnico da Maia Refrigeração e tenha um atendimento diferenciado e preciso. Contamos com técnicos de refrigeração especialmente treinados e rica experiência nas melhores instituições, para fornecer à sua máquina o tratamento, diagnóstico e manutenção adequados a um preço razoável! Além do profissionalismo e eficiência no diagnóstico e manutenção, também nos destacamos na pontualidade e no atendimento a você e seu equipamento.</p>
                         </div>
-                        <a class="quoteBtn2" href="index.html#quote">Solicitar Orçamento</a>
+                        <a class="quoteBtn2" href="index.php#quote">Solicitar Orçamento</a>
                     </div>
                 </div>
             </div>
