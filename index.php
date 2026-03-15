@@ -46,7 +46,7 @@ if(isset($_POST['sendMail'])) {
                         <li class="textLi"><a href="index.php#services">SERVIÇOS</a></li>
                         <li class="textLi"><a href="index.php#quote">ORÇAMENTO</a></li>
                         <li class="textLi"><a href="index.php#contacts">CONTATOS</a></li>
-                        <li class="buttonLi"><a href="https://wa.me/5571996984571?text=Ol%C3%A1!%20Estava%20navegando%20no%20seu%20site%2C%20pode%20me%20ajudar%3F" target="_blank"><img src="templates/assets/img/whatsapp.png" alt="WhatsApp icon linking to chat with Maia Refrigeração technician">Falar Com Técnico</a></li>
+                        <li class="buttonLi"><a href="https://wa.me/5571996984571?text=Ol%C3%A1!%20Estava%20navegando%20no%20seu%20site%2C%20pode%20me%20ajudar%3F" target="_blank">Falar Com Técnico</a></li>
                     </ul>
                 </nav>
             </div>
