@@ -93,6 +93,7 @@ header {
   padding: 1rem 10rem;
   justify-content: space-between;
   align-items: center;
+  height: fit-content;
 }
 
 .lowerHeader img {
@@ -107,6 +108,7 @@ ul {
   margin: 0;
   align-items: center;
   gap: 3rem;
+  height: fit-content;
 }
 
 .textLi a {
@@ -150,6 +152,7 @@ ul {
 
 .buttonLi a img {
   width: 2.5rem;
+  height: 2.5rem;
 }
 
 /* MAIN */
@@ -648,6 +651,7 @@ footer p {
   .buttonLi a img {
     display: flex;
     width: 1.5rem;
+    height: 1.5rem;
   }
 }
 
@@ -677,6 +681,7 @@ footer p {
   }
   .buttonLi a img {
     width: 1rem;
+    height: 1rem;
   }
   .buttonLi {
     padding: 1rem;
